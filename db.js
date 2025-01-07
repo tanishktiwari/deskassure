@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/ticketsDB', {
+mongoose.connect('mongodb+srv://tanishkpe:LteWGlE8ZE6u5j4D@cluster0.7afkr.mongodb.net/deskAssure', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
