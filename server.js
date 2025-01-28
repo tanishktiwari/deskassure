@@ -40,7 +40,7 @@
   // MongoDB Atlas connection string
 
   // /mongodb://localhost:27017/ticketsDB
-  const mongoURI = "mongodb+srv://tanishkpe:LteWGlE8ZE6u5j4D@cluster0.7afkr.mongodb.net/deskAssure";
+  const mongoURI = "mongodb://13.233.156.230:27017/ticketsDB";
   //mongodb+srv://deskAssure:Foxnet%40123%23@cluster01.fb97t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01
   // Connect to MongoDB
   mongoose
