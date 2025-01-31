@@ -1,0 +1,4 @@
+/node_modules
+s
+# Ignore .env file to prevent sensitive data exposure
+.env
