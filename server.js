@@ -17,8 +17,7 @@
   const port = process.env.PORT || 5174;
   const fsPromises = require('fs').promises;
   // Configure Brevo API client with hardcoded API key
-  const brevoapiKey =
-    "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";
+  const brevoapiKey = process.env.BREVO_API_KEY;;
   const brevoapiInstance = new brevo.TransactionalEmailsApi();
   brevoapiInstance.setApiKey(
     brevo.TransactionalEmailsApiApiKeys.apiKey,
@@ -3588,8 +3587,7 @@ app.get("/tickets/open", async (req, res) => {
   // Configure API key authorization
   const defaultClient = SibApiV3Sdk.ApiClient.instance;
   const apiKey = defaultClient.authentications["api-key"];
-  apiKey.apiKey =
-    "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"; // Replace with your actual API key
+  apiKey.apiKey =  process.env.BREVO_API_KEY;; // Replace with your actual API key
 
   const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
