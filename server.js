@@ -18,7 +18,7 @@
   const fsPromises = require('fs').promises;
   // Configure Brevo API client with hardcoded API key
   const brevoapiKey =
-    "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";
+    "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";
   const brevoapiInstance = new brevo.TransactionalEmailsApi();
   brevoapiInstance.setApiKey(
     brevo.TransactionalEmailsApiApiKeys.apiKey,
@@ -40,7 +40,8 @@
   // MongoDB Atlas connection string
 
   // /mongodb://localhost:27017/ticketsDB
-  const mongoURI = "mongodb://172.31.1.9:27017/ticketsDB";
+  const mongoURI = "mongodb://13.233.156.230:27017/ticketsDB";
+
   //mongodb+srv://deskAssure:Foxnet%40123%23@cluster01.fb97t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01
   // Connect to MongoDB
   mongoose
@@ -3589,7 +3590,7 @@ app.get("/tickets/open", async (req, res) => {
   const defaultClient = SibApiV3Sdk.ApiClient.instance;
   const apiKey = defaultClient.authentications["api-key"];
   apiKey.apiKey =
-    "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"; // Replace with your actual API key
+    "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"; // Replace with your actual API key
 
   const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
