@@ -18,7 +18,7 @@
   const fsPromises = require('fs').promises;
   // Configure Brevo API client with hardcoded API key
   const brevoapiKey =
-    "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";
+    "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";
   const brevoapiInstance = new brevo.TransactionalEmailsApi();
   brevoapiInstance.setApiKey(
     brevo.TransactionalEmailsApiApiKeys.apiKey,
