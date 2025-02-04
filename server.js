@@ -12,6 +12,7 @@
   const FormData = require("form-data");
   const fs = require("fs");
   const SibApiV3Sdk = require("sib-api-v3-sdk");
+  const imageRoutes = require('./routes/imageRoutes');
   dotenv.config();
   const app = express();
   const port = process.env.PORT || 5174;
@@ -35,6 +36,9 @@
   app.use(bodyParser.json());
   app.use(express.json());
   app.use(bodyParser.urlencoded({ extended: true })); // For parsing application/x-www-form-urlencoded
+  app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+  // Routes
+app.use('/api', imageRoutes);
 
   // MongoDB Atlas connection string
 
